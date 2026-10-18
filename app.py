@@ -55,6 +55,9 @@ st.markdown("""
         background: #E8F4FB;
         text-align: center;
     }
+    @media (max-width: 768px) {
+        header[data-testid="stHeader"] { display: flex; }
+    }
     </style>
 """, unsafe_allow_html=True)
 
