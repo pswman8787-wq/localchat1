@@ -1,0 +1,8 @@
+streamlit
+streamlit-option-menu
+google-genai
+pandas
+matplotlib
+seaborn
+scipy
+Pillow
