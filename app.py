@@ -117,7 +117,9 @@ def save_chat_history(messages):
 # 2. INTEGRASI API GOOGLE GEN AI (STANDARD PRODUKSI STABIL)
 # ==============================================================================
 # Sesuai standard SDK terbaru, kita paksa routing ke API v1 stabil
-API_KEY = os.environ.get("GEMINI_API_KEY", "ISI_API_KEY_AI_STUDIO_ANDA_DI_SINI")
+gemini_api_key_st = st.secrets["GEMINI_API_KEY"]
+
+API_KEY = os.environ.get("GEMINI_API_KEY", gemini_api_key_st)
 client = genai.Client(
     api_key=API_KEY,
     http_options={'api_version': 'v1'}
